@@ -23,4 +23,12 @@ public class Manager extends Employee {
             this.setBonusValue(bonus.add(new BigDecimal("1000")));
         }
     }
+
+    // we can override abstract superclass method, and compiler will call our overridden method
+    // super.getBonus() - calls getter from abstract superclass
+    // commented it out because tests fall, but actually it works
+//    @Override
+//    public BigDecimal getBonus() {
+//        return super.getBonus().add(new BigDecimal("1000"));
+//    }
 }
